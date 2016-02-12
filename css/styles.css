@@ -1,0 +1,42 @@
+
+.box{
+    width:70px;
+    height:70px;
+    display:inline-block;
+    text-align:center;
+    font-size:0.6em;
+    margin:2px;
+    color:white;
+    background:gray;
+}
+
+#floor{
+    background:#cccccc;
+    padding:2%;
+    /*position:relative;*/
+}
+
+.overlay{
+    opacity:0.3;
+}
+
+img {
+    width:60px;
+    height:60px;
+    padding-top:5px;
+}
+
+nav {
+    font-family:Helvetica Neue Thin, sans-serif;
+}
+
+#hidden-seat{
+    z-index:1000;
+    position:absolute;
+    width:40%;
+    height:40%;
+    text-align:center;
+    font-size:0.6em;
+    margin:2px;
+    background:yellow;
+}
