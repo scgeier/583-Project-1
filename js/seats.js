@@ -16,21 +16,19 @@ app.controller('SeatsController', ['$http', function($http) {
             console.log("This request failed.\n" + msg);
         });
 
-   this.currentSeat = [];
-   this.currentId = "";
+   this.activeSeat = "";
    //var seatInfo = "";
    
-   this.setCurrentSeat = function($index){
-    console.log($index);
-    this.currentSeat = $index;
-    console.log(this.seats[this.currentSeat].id);
-    this.currentId = this.seats[this.currentSeat].id;
+   this.setActiveSeat = function(item){
+    this.activeSeat = item;
+    console.log(this.activeSeat);
+    //this.currentId = this.seats[this.currentSeat].id;//
     this.isVisible = true;
     
     //below is another version that builds each popup window on demand with innerHTML//
     //seatInfo += 'State: ' + this.seats[this.currentSeat].state + '<img src="' + this.seats[this.currentSeat].incumbent.image + '"/>';
      //document.getElementById("hidden-seat").innerHTML = seatInfo;
-    }
+    };
     
     this.closeBox = function(){
         this.isVisible = false;

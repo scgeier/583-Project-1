@@ -78,13 +78,13 @@
 <container ng-controller="SeatsController as seatCtrl">
             <div class="row" id="floor">
              <div class="col-xs-6">
-                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:terms" ng-show="seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'blue'}" ng-click="seatCtrl.setCurrentSeat($index)">
+                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:terms" ng-show="seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'blue'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
                    <img src="{{seat.incumbent.image}}"/>
                    {{seat.state}}
                 </div>
              </div>
             <div class="col-xs-6">
-                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:terms" ng-show="!seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'red'}" ng-click="seatCtrl.setCurrentSeat($index)">
+                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:terms" ng-show="!seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'red'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
                     <img src="{{seat.incumbent.image}}"/>
                     {{seat.state}}
                 </div>
@@ -92,7 +92,7 @@
             </div>
     
   <div class="row" id="hidden-seat" ng-class="{hidden:!seatCtrl.isVisible}">
-     <div class="col-xs-12" ng-repeat="seat in seatCtrl.seats | filter:seatCtrl.currentId">
+     <div class="col-xs-12" ng-repeat="seat in seatCtrl.seats | filter:seatCtrl.activeSeat">
         <i class="fa fa-times fa-2x" ng-click="seatCtrl.closeBox()"></i>
         {{seat.state}}
         {{seat.incumbent.last}}
