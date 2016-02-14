@@ -1,6 +1,7 @@
 [
     {
         "number": 66,
+        "id": "d4n76",
         "side": true,
         "state": "Connecticut",
         "party": "Democrat",
@@ -12,6 +13,7 @@
     },
     {
         "number": 33,
+        "id": "V6rwpy23HNX",
         "side": true,
         "state": "Hawaii",
         "party": "Democrat",
@@ -33,6 +35,7 @@
     },
     {
             "number": 87,
+            "id": "2cHnMjMPuH",
             "side": true,
             "state": "New York",
             "party": "Democrat",
@@ -44,6 +47,7 @@
     },
     {
             "number": 56,
+            "id": "A7XmG6",
             "side": true,
             "state": "Michigan",
             "party": "Democrat",
@@ -55,6 +59,7 @@
     },
     {
             "number": 69,
+            "id": "aqE5vSnzG6ZeZ",
             "side": true,
             "state": "Rhode Island",
             "party": "Democrat",
@@ -66,6 +71,7 @@
     },
     {
             "number": 84,
+            "id": "5qeaLRJP64Qy",
             "side": true,
             "state": "California",
             "party": "Democrat",
@@ -77,6 +83,7 @@
     },
     {
             "number": 64,
+            "id": "wGtzrZd8m7pg",
             "side": true,
             "state": "Illinois",
             "party": "Democrat",
@@ -88,6 +95,7 @@
     },
     {
             "number": 10,
+            "id": "vGy6YCb5",
             "side": true,
             "state": "Nevada",
             "party": "Democrat",
@@ -120,6 +128,7 @@
     },
     {
             "number": 96,
+            "id": "B8cQQxfSz",
             "side": true,
             "state": "Virginia",
             "party": "Democrat",
@@ -131,6 +140,7 @@
     },
     {
             "number": 81,
+            "id": "GH8Pq5r82sVzh",
             "side": true,
             "state": "Maine",
             "party": "Independent",
@@ -142,6 +152,7 @@
     },
     {
             "number": 16,
+            "id": "9sqdB9GCuvS",
             "side": true,
             "state": "Wisconsin",
             "party": "Democrat",
@@ -153,6 +164,7 @@
     },
     {
             "number": 39,
+            "id": "3N3c4L",
             "side": true,
             "state": "Washington",
             "party": "Democrat",
@@ -164,6 +176,7 @@
     },
     {
             "number": 29,
+            "id": "BaK7H5UQ",
             "side": true,
             "state": "New Hampshire",
             "party": "Democrat",
@@ -173,8 +186,9 @@
                 {"first": "Jeanne", "last": "Shaheen", "image": "../img/shaheen.png"},
             "candidates":[]
     },
-               {
+    {
             "number": 43,
+            "id": "GCCcy5F3",
             "side": true,
             "state": "New Jersey",
             "party": "Democrat",
@@ -186,6 +200,7 @@
     },
     {
             "number": 51,
+            "id": "rtgmV35sG",
             "side": true,
             "state": "Maryland",
             "party": "Democrat",
@@ -197,6 +212,7 @@
     },
     {
             "number": 67,
+            "id":"v3JqW4g8QGrc",
             "side": true,
             "state": "Vermont",
             "party": "Democrat",
@@ -217,6 +233,7 @@
     },
     {
             "number": 5,
+            "id": "7F9TNLfLDqsu",
             "side": true,
             "state": "Maryland",
             "party": "Democrat",
@@ -436,6 +453,7 @@
     },
     {
             "number": 20,
+            "id":"qfMhMDfZP6s",
             "side": true,
             "state": "Washington",
             "party": "Democrat",
@@ -465,6 +483,7 @@
     },
       {
             "number": 83,
+            "id":"RZKBA8a",
             "side": true,
             "state": "Massachusetts",
             "party": "Democrat",
@@ -476,6 +495,7 @@
     },
       {
             "number": 25,
+            "id":"Mf5cdmqmVhM",
             "side": true,
             "state": "North Dakota",
             "party": "Democrat",
@@ -489,6 +509,7 @@
     },
           {
             "number": 71,
+            "id":"cufRcpg7A",
             "side": true,
             "state": "Hawaii",
             "party": "Democrat",
@@ -498,8 +519,9 @@
                 {"first": "Mazie", "last": "Hirono", "image": "../img/hirono.png"},
             "candidates":[]
     },
-              {
+    {
             "number": 98,
+            "id":"cjFDLM5Qu",
             "side": true,
             "state": "Indiana",
             "party": "Democrat",
@@ -511,6 +533,7 @@
     },
     {
             "number": 79,
+            "id":"haFb88PQp",
             "side": true,
             "state": "West Virginia",
             "party": "Democrat",
@@ -522,6 +545,7 @@
     },
     {
             "number": 31,
+            "id":"D8pS8jF49",
             "side": true,
             "state": "Oregon",
             "party": "Democrat",
@@ -533,6 +557,7 @@
     },
        {
             "number": 68,
+            "id":"8jLLBK4Qk",
             "side": true,
             "state": "New Mexico",
             "party": "Democrat",
@@ -544,6 +569,7 @@
     },
            {
             "number": 62,
+            "id":"a7gfVfjTy",
             "side": true,
             "state": "Vermont",
             "party": "Independent",
@@ -555,6 +581,7 @@
     },
        {
             "number": 19,
+            "id":"LKvbT2hW8",
             "side": true,
             "state": "Delaware",
             "party": "Democrat",
@@ -566,6 +593,7 @@
     },
         {
             "number": 97,
+            "id":"gSGY4B9fG",
             "side": true,
             "state": "California",
             "party": "Democrat",
@@ -704,6 +732,7 @@
     },
            {
             "number": 12,
+            "id":"pesXpqU3J",
             "side": true,
             "state": "Minnesota",
             "party": "Democrat",
@@ -715,6 +744,7 @@
     },
             {
             "number": 94,
+            "id":"FNwqCK8d7",
             "side": true,
             "state": "Florida",
             "party": "Democrat",
@@ -726,6 +756,7 @@
     },
             {
             "number": 44,
+            "id":"w4gc9mCGT",
             "side": true,
             "state": "Oregon",
             "party": "Democrat",
@@ -774,6 +805,7 @@
     },
                 {
             "number": 3,
+            "id":"du5pDBcsW",
             "side": true,
             "state": "New Jersey",
             "party": "Democrat",
@@ -785,6 +817,7 @@
     },
                    {
             "number": 14,
+            "id":"apprpFh95",
             "side": true,
             "state": "Michigan",
             "party": "Democrat",
@@ -796,6 +829,7 @@
     },
                 {
             "number": 63,
+            "id":"hNg3eAGLe",
             "side": true,
             "state": "Connecticut",
             "party": "Democrat",
@@ -819,13 +853,14 @@
                     "party":"Republican",
                     "image":"../img/wolf.jpg",
                     "position": "Financial advisor",
-                    "bio": "August Wolf is a graduate of Princeton University. He placed fourth in the shot put in the 1984 Olympics.",
+                    "bio": "August Wolf is a graduate of Princeton University. He placed fourth in the shot put in the Olympics.",
                     "platform":"Billionaire industrialist David Koch has endorsed Wolf."
                 }
                 ]
     },
     {
             "number": 36,
+            "id":"cUZnYd4fU",
             "side": true,
             "state": "Massachusetts",
             "party": "Democrat",
@@ -837,6 +872,7 @@
     },
        {
             "number": 21,
+            "id":"BAts26pSE",
             "side": true,
             "state": "New Mexico",
             "party": "Democrat",
@@ -848,6 +884,7 @@
     },
        {
             "number": 15,
+            "id":"GCFn9cyan",
             "side": true,
             "state": "Rhode Island",
             "party": "Democrat",
@@ -859,6 +896,7 @@
     },
                     {
             "number": 75,
+            "id":"GTYv9a4Hb",
             "side": true,
             "state": "Colorado",
             "party": "Democrat",
@@ -961,6 +999,7 @@
     },
     {
             "number": 18,
+            "id":"X82eFZvDJ",
             "side": true,
             "state": "Virginia",
             "party": "Democrat",
@@ -972,6 +1011,7 @@
     },
         {
             "number": 93,
+            "id":"yCqxv8r9s",
             "side": true,
             "state": "Montana",
             "party": "Democrat",
@@ -983,6 +1023,7 @@
     },
         {
             "number": 37,
+            "id":"FQ2RXJmrt",
             "side": true,
             "state": "Missouri",
             "party": "Democrat",
@@ -994,6 +1035,7 @@
     },
         {
             "number": 88,
+            "id":"3YEhD9aPq",
             "side": true,
             "state": "Ohio",
             "party": "Democrat",
@@ -1005,6 +1047,7 @@
     },
         {
             "number": 91,
+            "id":"NBmTq8Q2e",
             "side": true,
             "state": "Delaware",
             "party": "Democrat",
@@ -1016,6 +1059,7 @@
     },
         {
             "number": 11,
+            "id":"vcFtR9a7e",
             "side": true,
             "state": "Minnesota",
             "party": "Democrat",
@@ -1027,6 +1071,7 @@
     },
         {
             "number": 99,
+            "id":"6ecjSRVCR",
             "side": true,
             "state": "Pennsylvania",
             "party": "Democrat",
@@ -1038,6 +1083,7 @@
     },
     {
             "number": 46,
+            "id":"acgLLQL2y",
             "side": true,
             "state": "New York",
             "party": "Democrat",
@@ -1058,6 +1104,7 @@
     },
          {
             "number": 6,
+            "id":"ZbbZ6G9Xc",
             "side": false,
             "state": "Kentucky",
             "party": "Republican",
@@ -1069,6 +1116,7 @@
     },
              {
             "number": 41,
+            "id":"XswQm6Yxb",
             "side": false,
             "state": "Texas",
             "party": "Republican",
@@ -1080,6 +1128,7 @@
     },
         {
             "number": 86,
+            "id":"F9N5yQheU",
             "side": false,
             "state": "Iowa",
             "party": "Republican",
@@ -1128,6 +1177,7 @@
     },
     {
             "number": 49,
+            "id":"8uNST9FLP",
             "side": false,
             "state": "Oklahoma",
             "party": "Republican",
@@ -1139,6 +1189,7 @@
     },
         {
             "number": 30,
+            "id":"a8cJFLXNE",
             "side": false,
             "state": "Tennessee",
             "party": "Republican",
@@ -1150,6 +1201,7 @@
     },
     {
             "number": 76,
+            "id":"vXkS6Ygyk",
             "side": false,
             "state": "Tennessee",
             "party": "Republican",
@@ -1161,6 +1213,7 @@
     },
             {
             "number": 58,
+            "id":"FVBy9uk9G",
             "side": false,
             "state": "Kentucky",
             "party": "Republican",
@@ -1263,6 +1316,7 @@
     },
                 {
             "number": 24,
+            "id":"Vq4AnvD2s",
             "side": false,
             "state": "Illinois",
             "party": "Republican",
@@ -1320,6 +1374,7 @@
     },
     {
             "number": 40,
+            "id":"6E7YaEuD4",
             "side": false,
             "state": "Utah",
             "party": "Republican",
@@ -1331,6 +1386,7 @@
     },
         {
             "number": 60,
+            "id":"29kFBNcGf",
             "side": false,
             "state": "Mississippi",
             "party": "Republican",
@@ -1342,6 +1398,7 @@
     },
     {
             "number": 23,
+            "id":"dkE97D8Ky",
             "side": false,
             "state": "Alabama",
             "party": "Republican",
@@ -1417,6 +1474,7 @@
     },
     {
             "number": 61,
+            "id":"gmdUNR2K6",
             "side": false,
             "state": "Kansas",
             "party": "Republican",
@@ -1428,6 +1486,7 @@
     },
         {
             "number": 28,
+            "id":"y7rGLbyCA",
             "side": false,
             "state": "Wyoming",
             "party": "Republican",
@@ -1439,6 +1498,7 @@
     },
             {
             "number": 59,
+            "id":"373Brsf3S",
             "side": false,
             "state": "South Carolina",
             "party": "Republican",
@@ -1450,6 +1510,7 @@
     },
     {
             "number": 48,
+            "id":"JVFnwS9qs",
             "side": false,
             "state": "Arizona",
             "party": "Republican",
@@ -1498,6 +1559,7 @@
     },
         {
             "number": 34,
+            "id":"T2waSKcbt",
             "side": false,
             "state": "Louisiana",
             "party": "Republican",
@@ -1573,6 +1635,7 @@
     },
     {
             "number": 4,
+            "id":"V6rbqZnwb",
             "side": false,
             "state": "Arizona",
             "party": "Republican",
@@ -1584,6 +1647,7 @@
     },
     {
             "number": 72,
+            "id":"E8hPpFZVR",
             "side": false,
             "state": "New Hampshire",
             "party": "Republican",
@@ -1614,6 +1678,7 @@
     },
         {
             "number": 1,
+            "id":"CxGMyj84b",
             "side": false,
             "state": "West Virginia",
             "party": "Republican",
@@ -1625,6 +1690,7 @@
     },
             {
             "number": 6,
+            "id":"jZLDh5SQq",
             "side": false,
             "state": "South Dakota",
             "party": "Republican",
@@ -1636,6 +1702,7 @@
     },
             {
             "number": 27,
+            "id":"A2kMZTY6m",
             "side": false,
             "state": "Maine",
             "party": "Republican",
@@ -1647,6 +1714,7 @@
     },
        {
             "number": 38,
+            "id":"Y7LnLK2ya",
             "side": false,
             "state": "Alaska",
             "party": "Republican",
@@ -1686,6 +1754,7 @@
     },
     {
             "number": 8,
+            "id":"eH8y9QJ6U",
             "side": false,
             "state": "Mississippi",
             "party": "Republican",
@@ -1697,6 +1766,7 @@
     },
         {
             "number": 90,
+            "id":"rTy4thAMs",
             "side": false,
             "state": "Alabama",
             "party": "Republican",
@@ -1708,6 +1778,7 @@
     },
          {
             "number": 53,
+            "id":"3h32wUwN3",
             "side": false,
             "state": "Wyoming",
             "party": "Republican",
@@ -1719,6 +1790,7 @@
     },
     {
             "number": 74,
+            "id":"bDUWd43YH",
             "side": false,
             "state": "Idaho",
             "party": "Republican",
@@ -1739,6 +1811,7 @@
     },
              {
             "number": 50,
+            "id":"54PHpf5hZ",
             "side": false,
             "state": "Idaho",
             "party": "Republican",
@@ -1750,6 +1823,7 @@
     },
           {
             "number": 95,
+            "id":"9ccRCWZ65",
             "side": false,
             "state": "Florida",
             "party": "Republican",
@@ -1825,6 +1899,7 @@
     },
               {
             "number": 35,
+            "id":"5Wt29ddUM",
             "side": false,
             "state": "Georgia",
             "party": "Republican",
@@ -1864,6 +1939,7 @@
     },
                   {
             "number": 47,
+            "id":"4ULnSD7tE",
             "side": false,
             "state": "North Carolina",
             "party": "Republican",
@@ -1957,6 +2033,7 @@
     },
     {
             "number": 70,
+            "id":"b8ZWxUqCL",
             "side": false,
             "state": "Texas",
             "party": "Republican",
@@ -1968,6 +2045,7 @@
     },
        {
             "number": 100,
+            "id":"c2G58BJqL",
             "side": false,
             "state": "Montana",
             "party": "Republican",
@@ -1979,6 +2057,7 @@
     },
       {
             "number": 78,
+            "id":"XLcVNh4QY",
             "side": false,
             "state": "Colorado",
             "party": "Republican",
@@ -1990,6 +2069,7 @@
     },
       {
             "number": 13,
+            "id":"63urZhMqe",
             "side": false,
             "state": "Arkansas",
             "party": "Republican",
@@ -2001,6 +2081,7 @@
     },
       {
             "number": 92,
+            "id":"Mw45HUkpF",
             "side": false,
             "state": "Iowa",
             "party": "Republican",
@@ -2012,6 +2093,7 @@
     },
       {
             "number": 73,
+            "id":"J4qZ77FqH",
             "side": false,
             "state": "Alaska",
             "party": "Republican",
@@ -2023,6 +2105,7 @@
     },
     {
             "number": 52,
+            "id":"X6gYq8Zry",
             "side": false,
             "state": "Kansas",
             "party": "Republican",
@@ -2043,6 +2126,7 @@
     },
         {
             "number": 57,
+            "id":"9txy6mLUK",
             "side": false,
             "state": "Arkansas",
             "party": "Republican",
@@ -2091,6 +2175,7 @@
     },
     {
             "number": 89,
+            "id":"F8UbQXZs8",
             "side": false,
             "state": "Nevada",
             "party": "Republican",
@@ -2102,6 +2187,7 @@
     },
     {
             "number": 7,
+            "id":"zEH5eXyPR",
             "side": false,
             "state": "Nebraska",
             "party": "Republican",
@@ -2113,6 +2199,7 @@
     },
             {
             "number": 54,
+            "id":"RWt5FdpZS",
             "side": false,
             "state": "South Carolina",
             "party": "Republican",
@@ -2143,6 +2230,7 @@
     },
     {
             "number": 2,
+            "id":"r6Khj5yGm",
             "side": false,
             "state": "Missouri",
             "party": "Republican",
@@ -2191,6 +2279,7 @@
     },
         {
             "number": 65,
+            "id":"WLN7bjHsu",
             "side": false,
             "state": "South Dakota",
             "party": "Republican",
@@ -2211,6 +2300,7 @@
     },
          {
             "number": 45,
+            "id":"Vx5faPLKu",
             "side": false,
             "state": "North Dakota",
             "party": "Republican",
@@ -2241,6 +2331,7 @@
     },
       {
             "number": 26,
+            "id":"QXsbNjh9Q",
             "side": false,
             "state": "Louisiana",
             "party": "Republican",
@@ -2252,6 +2343,7 @@
     },
     {
             "number": 42,
+            "id":"KjtPCsB82",
             "side": false,
             "state": "Utah",
             "party": "Republican",
@@ -2282,6 +2374,7 @@
     },
     {
             "number": 22,
+            "id":"AagTXYq8F",
             "side": false,
             "state": "Indiana",
             "party": "Republican",
@@ -2321,6 +2414,7 @@
     },
         {
             "number": 77,
+            "id":"kDz4p6X63",
             "side": false,
             "state": "Ohio",
             "party": "Republican",
@@ -2378,6 +2472,7 @@
     },
     {
             "number": 80,
+            "id":"CSPh5v7dp",
             "side": false,
             "state": "Pennsylvania",
             "party": "Republican",
@@ -2435,6 +2530,7 @@
     },
     {
             "number": 55,
+            "id":"qZqm6zScg",
             "side": false,
             "state": "Oklahoma",
             "party": "Republican",
@@ -2455,6 +2551,7 @@
     },
         {
             "number": 82,
+            "id":"JSNz9HfXX",
             "side": false,
             "state": "Wisconsin",
             "party": "Republican",
@@ -2485,6 +2582,7 @@
     },
     {
             "number": 32,
+            "id":"2fLgLyaum",
             "side": false,
             "state": "Georgia",
             "party": "Republican",
@@ -2496,6 +2594,7 @@
     },
        {
             "number": 17,
+            "id":"Hce2U3HkT",
             "side": false,
             "state": "North Carolina",
             "party": "Republican",
@@ -2507,6 +2606,7 @@
     },
        {
             "number": 85,
+            "id":"Bb8bu6dQS",
             "side": false,
             "state": "Nebraska",
             "party": "Republican",

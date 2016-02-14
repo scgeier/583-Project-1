@@ -1,3 +1,6 @@
+html {
+    position:relative;
+}
 
 .box{
     width:70px;
@@ -13,7 +16,6 @@
 #floor{
     background:#cccccc;
     padding:2%;
-    /*position:relative;*/
 }
 
 .overlay{
@@ -30,13 +32,23 @@ nav {
     font-family:Helvetica Neue Thin, sans-serif;
 }
 
+.hidden {
+  display:none !important;
+}
+
+
 #hidden-seat{
     z-index:1000;
     position:absolute;
+    top:20%;
+    left:20%;
     width:40%;
     height:40%;
-    text-align:center;
-    font-size:0.6em;
-    margin:2px;
-    background:yellow;
+    padding:5%;
+    background:#f2f2f2;
+    border-radius:5px;
+}
+
+i {
+    float:right;
 }

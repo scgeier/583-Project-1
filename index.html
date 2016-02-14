@@ -12,10 +12,13 @@
         <script type="text/javascript" src="js/seats.js"></script>
         
 
-        <!-- css -->
+        <!--bootstrap css -->
         <link rel="stylesheet" href="css/bootstrap.css" />
         <!--my css-->
         <link rel="stylesheet" href="css/styles.css" />
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     </head>
 
     <body ng-app="myApp" ng-controller="BaseController as base">
@@ -51,7 +54,7 @@
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" class="form-control" placeholder="Search" ng-model="terms">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
@@ -75,24 +78,26 @@
 <container ng-controller="SeatsController as seatCtrl">
             <div class="row" id="floor">
              <div class="col-xs-6">
-                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats" ng-show="seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'blue'}" ng-click="seatCtrl.setCurrentSeat($index)">
+                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:terms" ng-show="seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'blue'}" ng-click="seatCtrl.setCurrentSeat($index)">
                    <img src="{{seat.incumbent.image}}"/>
                    {{seat.state}}
                 </div>
              </div>
             <div class="col-xs-6">
-                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats" ng-show="!seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'red'}" ng-click="seatCtrl.setCurrentSeat($index)">
+                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:terms" ng-show="!seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'red'}" ng-click="seatCtrl.setCurrentSeat($index)">
                     <img src="{{seat.incumbent.image}}"/>
                     {{seat.state}}
                 </div>
              </div>
             </div>
     
- 
-     <div id="hidden-seat" ng-repeat="seat in seatCtrl.seats | filter:seatCtrl.currentLastName">
+  <div class="row" id="hidden-seat" ng-class="{hidden:!seatCtrl.isVisible}">
+     <div class="col-xs-12" ng-repeat="seat in seatCtrl.seats | filter:seatCtrl.currentId">
+        <i class="fa fa-times fa-2x" ng-click="seatCtrl.closeBox()"></i>
         {{seat.state}}
         {{seat.incumbent.last}}
-     </div> 
+     </div>
+    </div>
  
 </container>
 
