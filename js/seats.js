@@ -20,6 +20,7 @@ app.controller('SeatsController', ['$http', function($http) {
 
    this.activeSeat = "";
    //var seatInfo = "";
+   this.chosenStates = [];
    
    this.setActiveSeat = function(item){
     this.activeSeat = item;
@@ -36,4 +37,16 @@ app.controller('SeatsController', ['$http', function($http) {
         this.isVisible = false;
     };
 
+    //this is an attempt to write a loop that sorts the seats based on the ones that match the chosen value in a dropdown//
+    //this.changeState = function(){
+        //for(var i = 0; i < this.seats.length; i++){
+            //if (this.seats[i].state == "Oklahoma") {
+                //this.chosenStates.push(this.seats[i]);
+                  //console.log(this.chosenStates);
+            //}
+        //}
+    //};
+    
+
+    
 }]);

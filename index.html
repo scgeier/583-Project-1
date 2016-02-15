@@ -85,9 +85,13 @@
       </div>
     
         <div class="col-xs-4">
-        <label>State:</label>        
-        <select class="form-control" ng-model="selectedState">
-            <option ng-repeat="seat in seatCtrl.seats" value="{{seat.state}}">{{seat.state}}</option>
+        <label>Professional Background</label>        
+        <select class="form-control" ng-model="selectedJob">
+            <option value="lawyer">Lawyers</option>
+            <option value="doctor">Doctors</option>
+            <option value="businessman">Businesspersons</option>
+            <option value="lifer">Career Politicians</option>
+            <option value="miscellaneous">Other</option>
         </select>
       </div>
         
@@ -103,13 +107,13 @@
     
             <div class="row" id="floor">
              <div class="col-xs-6">
-                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedState" ng-show="seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'blue'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
+                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedJob" ng-show="seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'blue'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
                    <img src="{{seat.incumbent.image}}"/>
                    {{seat.state}}
                 </div>
              </div>
             <div class="col-xs-6">
-                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedState" ng-show="!seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'red'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
+                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedJob" ng-show="!seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'red'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
                     <img src="{{seat.incumbent.image}}"/>
                     {{seat.state}}
                 </div>

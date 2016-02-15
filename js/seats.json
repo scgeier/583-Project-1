@@ -28,6 +28,7 @@
                     "party":"Democrat",
                     "image":"../img/schatz.png",
                     "position": "Incumbent",
+                    "background":"teacher",
                     "bio": "The former Lieutenant Governor of Hawaii, Brian Schatz was appointed as U.S. Senator after the death of Daniel Inouye in 2012. He has a B.A. in philosopy from Pomona College, and worked as a high school teacher before entering politics.",
                     "platform":"Schatz supports same-sex marriage, expanded background checks for gun purchases, and the Cyber Information Sharing Act."
                     
@@ -111,6 +112,7 @@
                     "party":"Democrat",
                     "image":"../img/masto.jpg",
                     "position": "Attorney General of Nevada",
+                    "background":"lawyer",
                     "bio": "Catherine Cortez Masto has a B.S. in finance from the University of Nevada Reno and J.D. from Gonzaga University. She worked as a civil lawyer in Las Vegas and prosecutor for the U.S. Attorney's Office before becoming the Attorney General of Nevada.",
                     "platform":"The retiring incumbent, Harry Reid, has endorsed Cortez Masto. She is expected to fashion her political platform according to Reid's example."
                     
@@ -120,6 +122,7 @@
                     "last": "Heck",
                     "party":"Republican",
                     "image":"../img/heck.jpg",
+                    "background":"doctor",
                     "position": "U.S. Representative for Nevada's 3rd Congressional District",
                     "bio": "Heck graduated from Penn State University and earned a Doctor of Osteopathic Medicine from the Philadelphia College of Osteopathic Medicine. Prior to becoming a Congressman, he worked as a physician with the Las Vegas Police Department Search and Rescue team and owned a business that provided medical consulting to military and law enforcement.",
                     "platform":"Heck is a fiscal conservative. He has voted against EPA regulation of greenhouse gasses and voted to repeal the Affordable Care Act."
@@ -229,6 +232,7 @@
                     "party":"Democrat",
                     "image":"../img/leahy.png",
                     "position": "Incumbent",
+                    "background":"lawyer",
                     "bio": "Patrick Leahy graduated from St. Michael's College and earned a J.D. from Georgetown University. He worked briefly as a lawyer before entering politics. He is the most senior member of the Senate, having served since 1975.",
                     "platform":"Leahy is a staunch liberal. For decades, he has supported women's rights, gun control, environmental protection, public health care, and progressive tax rates."  
                 }
@@ -259,6 +263,7 @@
                     "party":"Democrat",
                     "image":"../img/edwards.jpg",
                     "position": "U.S. Representative for Maryland's 4th Congressional District",
+                    "background":"lawyer",
                     "bio": "Edwards has B.A. degrees in English and Spanish from Wake Forest University, and a J.D. from the University of New Hampshire School of Law. Before going into politics, she worked for Lockheed Martin and co-founded the National Network to End Domestic Violence. In 2009, she was arrested during a genocide protest outside the U.S. Embassy in Sudan.",
                     "platform":"Edwards has opposed the Iraq War, a repeal of the estate tax, and a bill that would have eliminated some bankruptcy protection for individuals."
                 },
@@ -470,6 +475,7 @@
                     "party":"Democrat",
                     "image":"../img/murray.png",
                     "position": "Incumbent",
+                    "background":"teacher",
                     "bio": "Patty Murray earned a B.A. in physical education from Washington State University and worked as a preschool teacher before entering politics. She has been in office since 1992 and is currently the highest ranking woman in the Senate.",
                     "platform":"Murray opposed the Iraq War, and she is strong advocate for ensuring that women have access to quality healthcare. She supported immigration reform that increased punishment for employers of illegal immigrants, but gave those immigrants a path to citizenship."
                 },
@@ -610,6 +616,7 @@
                     "party":"Democrat",
                     "image":"../img/harris.jpg",
                     "position": "Attorney General of California",
+                    "background":"lawyer",
                     "bio": "Kamala Harris graduated from Howard University and the UC Hastings College of the Law. Her mother was an Indian immigrant and breast cancer researcher. Her father is a Jamaican-American professor of economics at Stanford.",
                     "platform":"Harris supports gun control and giving homeowners more options to keep their houses when facing foreclosure. She opposes the death penalty."
                 },
@@ -773,6 +780,7 @@
                     "party":"Democrat",
                     "image":"../img/wyden.png",
                     "position": "Incumbent",
+                    "background":"lawyer",
                     "bio": "Ron Wyden is the son of Jewish parents who fled Nazi Germany during World War II. He earned a B.A. from Stanford University and J.D. from the University of Oregon. Before entering politics, he taught gerontology and worked for the Oregon Legal Services Center for Elderly.",
                     "platform":"Wyden voted against President Bush's financial bailouts during the economic crisis from 2007 to 2010. He supported federal funding for embryonic stem-cell research in 2005, and the creation of a national system of market-based private health insurance in 2009. "
                 },
@@ -782,6 +790,7 @@
                     "party":"Democrat",
                     "image":"../img/stine.jpg",
                     "position": "Medford, Oregon, City Councilor",
+                    "background":"lawyer",
                     "bio": "Kevin Stine is a 29-year-old Navy veteran. He is currently studying political science at Southern Oregon University.",
                     "platform":""
                 },
@@ -846,6 +855,7 @@
                     "party":"Democrat",
                     "image":"../img/blumenthal.png",
                     "position": "Incumbent",
+                    "background":"lawyer",
                     "bio": "Richard Blumenthal graduated from Harvard University and Yale Law School.",
                     "platform":"During his career as former Attorney General of Connecticut, Blumenthal led multi-state lawsuits against Microsoft, the tobacco industry, and Countrywide Financial mortgage lenders. He has urged the EPA to declare carbon dioxide as a dangerous air pollutant."
                 },
@@ -913,6 +923,7 @@
                     "party":"Democrat",
                     "image":"../img/bennet.png",
                     "position": "Incumbent",
+                    "background":"lawyer",
                     "bio": "Michael Bennet graduated from Wesleyan University and Yale Law School. He is the former Superintendent of Denver Public Schools and Managing Director of Anschutz Investment Company.",
                     "platform":"Bennet supports immigration reform, the Affordable Care Act, and financial regulatory reform."
                 },
@@ -1100,6 +1111,7 @@
                     "party":"Democrat",
                     "image":"../img/schumer.png",
                     "position": "Incumbent",
+                    "background":"lifer",
                     "bio": "Chuck Schumer scored a perfect 1600 on the SAT, and graduated from Harvard University and Harvard Law School. He went immediatley into politics, as a New York State Assemblyman.",
                     "platform":"Schumer is pro-choice and has supported gun control and health care reform. He supported the Iraq War, but was critical of the Bush strategy. He opposed President Obama's call to raise taxes on those earning over $250,000, saying 'There are a lot of people who make above 250 who aren't rich.'"
                 }
@@ -1145,6 +1157,7 @@
                     "party":"Republican",
                     "image":"../img/grassley.png",
                     "position": "Incumbent",
+                    "background":"teacher",
                     "bio": "Chuck Grassley earned a B.A. and M.A. from the University of Northern Iowa, and a PhD in political science from the University of Iowa. He was a farmer, factory worker and college professor before becoming a Congressman in 1975.",
                     "platform":"Grassley is pro-life. He supports wind energy development and bipartisan efforts to remove certain aspects of the Affordable Care Act, such as the individual mandate."
                 },
@@ -1230,6 +1243,7 @@
                     "party":"Republican",
                     "image":"../img/paul.png",
                     "position": "Incumbent",
+                    "background":"doctor",
                     "bio": "Rand Paul is currently running for President. The son of former Texas Congressman and Presidential candidate Ron Paul, he graduated from Baylor University and earned a M.D. from Duke University. He practiced opthalmology before entering politics.",
                     "platform":"Paul is a Tea Party conservative who skews libertarian. He opposes gun control, and supports a flat tax, term limits, and balanced budget amendment."
                 },
@@ -1333,6 +1347,7 @@
                     "party":"Republican",
                     "image":"../img/kirk.png",
                     "position": "Incumbent",
+                    "background":"lawyer",
                     "bio": "Mark Kirk graduated from Cornell University and earned a law degree from Georgetown University. He practiced law for roughly 20 years before being elected to the U.S. House of Representatives in 2000.",
                     "platform":"Kirk is a moderate Republican. He is pro choice, and supports same-sex marriage and gun control."
                 },
@@ -1415,6 +1430,7 @@
                     "party":"Republican",
                     "image":"../img/shelby.png",
                     "position": "Incumbent",
+                    "background":"lawyer",
                     "bio": "Richard Shelby graduated from the University of Alabama and the Birmingham School of Law. He worked as a city prosecutor and U.S. magistrate before entering politics. ",
                     "platform":"A former Democrat, Shelby switched to the Republican Party in 1994. He is pro life and supports a flat tax. He opposes bank regulation and Obamacare."
                 },
@@ -1527,6 +1543,7 @@
                     "party":"Republican",
                     "image":"../img/mccain.png",
                     "position": "Incumbent",
+                    "background":"lifer",
                     "bio": "",
                     "platform":""
                 },
@@ -1545,6 +1562,7 @@
                     "party":"Republican",
                     "image":"../img/ward.jpg",
                     "position": "Arizona State Senator",
+                    "background":"doctor",
                     "bio": "Kelli Ward gradatued from Duke University and the West Virginia School of Osteopathic Medicine. She continued to work as an emergency room physican after being elected to the Arizona State Senate.",
                     "platform":"Ward is considered a Tea Party candidate. She supported Clive Bundy during his standoff with the Bureau of Land Management, and said that former Clippers owner Donald Sterling should not have lost his team because of his racist remarks."
                 },
@@ -1576,6 +1594,7 @@
                     "party":"Republican",
                     "image":"../img/fleming.jpg",
                     "position": "U.S. Representative",
+                    "background":"doctor",
                     "bio": "John Fleming earned B.S. and M.D. degrees from the University of Mississippi. He is a Navy veteran and praticed family medicine for many years. He also owns 36 Subway restaurants and has a black belt in karate.",
                     "platform":"Fleming introduced a Republican alternative to Obama's health care reform bill in 2013. He opposes the Defense Department's appointment of atheist chaplains. He supports cuts in government spending, but spoke out against a plan that would have reduced funding to an Air Force base in his district."
                 },
@@ -1664,6 +1683,7 @@
                     "party":"Republican",
                     "image":"../img/ayotte.png",
                     "position": "Incumbent",
+                    "background":"lawyer",
                     "bio": "Kelly Ayotte graduated from Penn State University and Villanova University Schoool of Law. Before her election to the Senate in 2011, she was the first female Attorney General of New Hampshire.",
                     "platform":"Ayotte is a pro-life candidate who oppposes gun control and same-sex marriage. She is skeptical that climate change is the result of human activity. She advocates a balanced budget amendment."
                 },
@@ -1731,6 +1751,7 @@
                     "party":"Republican",
                     "image":"../img/murkowski.png",
                     "position": "Incumbent",
+                    "background":"lawyer",
                     "bio": "Lisa Murkowksi has a B.A. in economics from Georgetown University and a J.D. from Willamette University. She is the daughter of former Senator Frank Murkowski. She was a lawyer and U.S. Representative until 2002, when her father appointed her to replace him in the Senate.",
                     "platform":"Murkowksi opposes gun control, same-sex marriage, and Obamacare."
                 },
@@ -1807,6 +1828,7 @@
                     "party":"Republican",
                     "image":"../img/crapo.png",
                     "position": "Incumbent",
+                    "background":"lawyer",
                     "bio": "Mike Crapo is a graduate of BYU and Harvard University Law School. He practiced law before going into politics in the 1980s. He is Mormon and had previously claimed that he does not drink alcohol. However, he pled guilty to DUI in 2013.",
                     "platform":"Crapo has opposed Obamacare and a bill that would have expanded background checks for gun buyers. He has supported initiatives for offshore and artic refuge drilling."
                 }        
@@ -1840,6 +1862,7 @@
                     "party":"Republican",
                     "image":"../img/desantis.jpg",
                     "position": "U.S. Representative",
+                    "background":"lawyer",
                     "bio": "Ron DeSantis was captain of the baseball team at Yale University, and earned his law degree from Harvard University. He served as a legal advisor to the Navy SEALS before becoming a Congressman.",
                     "platform":"DeSantis supports term limits, a strong military, and deficit reduction."
                 },
@@ -1916,6 +1939,7 @@
                     "party":"Republican",
                     "image":"../img/isakson.png",
                     "position": "Incumbent",
+                    "background":"businessman",
                     "bio": "Johnny Isakson graduated from the University of Georgia. He was president of a successful real estate company for many years before being elected to the U.S. Senate in 2004.",
                     "platform":"Isakson has sponsored bills to abolish the Internal Revenue Code, dissolve Freddie Mac and Fannie Mae, and suspend the Endangered Species Act during serious droughts."
                 },
@@ -1956,6 +1980,7 @@
                     "party":"Republican",
                     "image":"../img/burr.png",
                     "position": "Incumbent",
+                    "background":"businessman",
                     "bio": "Richard Burr played football at Wake Forest University and worked as a sales manager for a lawn equipment distribution company before becoming a Congressman.",
                     "platform":"Burr has opposed Obamacare, increased government regulation of the financial industry, and expanded background checks on guy buyers."
                 },
@@ -2122,6 +2147,7 @@
                     "party":"Republican",
                     "image":"../img/moran.png",
                     "position": "Incumbent",
+                    "background":"lawyer",
                     "bio": "Jerry Moran earned a B.S. in economics and a J.D. from the University of Kansas. He practiced law for 14 years before becoming a U.S. Representative.",
                     "platform":"Moran is pro-life. He opposes same-sex marriage, gun control and President Obama's health care reform."
                 }
@@ -2143,6 +2169,7 @@
                     "party":"Republican",
                     "image":"../img/boozman.png",
                     "position": "Incumbent",
+                    "background":"doctor",
                     "bio": "John Boozman played football at the University of Arkansas and earned a degree from the Southern College of Optometry. He owned an optometry clinic for many years before winning election to the U.S. House of Representatives in 2002.",
                     "platform":"Boozman supports a constitutional amendment against same-sex marriage. He supports health care reform, but disagrees with the methods involved in the Affordable Care Act. He introduced legislation to give tax credits to teachers in low-income schools."
                 },
@@ -2161,6 +2188,7 @@
                     "party":"Democrat",
                     "image":"../img/eldridge.jpg",
                     "position": "U.S. Attorney for the Western District of Arkansas",
+                    "background":"lawyer",
                     "bio": "Conner Eldridge graduated from Davidson College and earned a J.D. from the University of Arkansas. He ",
                     "platform":"Eldridge has made deficit reduction a priority in his platform. He also supports gun rights and life sentences for first-time child sex offenders."
                 },
@@ -2216,6 +2244,7 @@
                     "party":"Republican",
                     "image":"../img/scott.png",
                     "position": "Incumbent",
+                    "background":"businessman",
                     "bio": "Tim Scott is the first African-American to serve in both the House of Representatives and Senate. He has a B.S. in political science from Charleston Southern University and owns an insurance agency. He has never married.",
                     "platform":"Scott is a staunch conservative. He wants to repeal Obamacare, pass a balanced budget amendment, and deny food stamps to people who become eligible because a family member is on strike."
                 },
@@ -2247,6 +2276,7 @@
                     "party":"Republican",
                     "image":"../img/blunt.png",
                     "position": "Incumbent",
+                    "background":"teacher",
                     "bio": "Roy Blunt has a B.A. in history from Southwest Baptist University and an M.A. in history from Missouri State University. He was the Arkansas Secretary of State and U.S. Representative before becoming a Senator in 2011.",
                     "platform":"Blunt has advocated school prayer, he has voted to reduce the waiting period for gun purchases from 72 to 24 hours, and he has supported bankruptcy reform that would require individuals to repay more of their debts."
                 },
@@ -2296,6 +2326,7 @@
                     "party":"Republican",
                     "image":"../img/thune.png",
                     "position": "Incumbent",
+                    "background":"lifer",
                     "bio": "John Thune has a B.A. from Biola University and an M.B.A. from the University of South Dakota. An avid runner, he was called the 'Fastest Man in Congress' in a 2012 magazine article.",
                     "platform":"Thune advocates gun rights, alternative energy and net neutrality."
                 }
@@ -2317,6 +2348,7 @@
                     "party":"Republican",
                     "image":"../img/hoeven.png",
                     "position": "Incumbent",
+                    "background":"businessman",
                     "bio": "John Hoeven graduated from Dartmouth College and earned an M.B.A. from Northwestern University. He worked as a a bank president before becoming Governor of North Dakota in 2000.",
                     "platform":"Hoeven is pro-life and opposes same-sex marriage. He believes that public health care should only be available to senior citizens and children."
                 },
@@ -2360,6 +2392,7 @@
                     "party":"Republican",
                     "image":"../img/lee.png",
                     "position": "Incumbent",
+                    "background":"lawyer",
                     "bio": "Mike Lee earned a B.A. and J.D. from Brigham Young University, where his father was a former dean. He practiced law for several years before winning election to the Senate in 2010.",
                     "platform":"Lee has received near-perfect scores from conservative groups for his voting record. He supports lower taxes, a balanced budget amendment, and raising the Social Security retirement age to 70."
                 },
@@ -2391,6 +2424,7 @@
                     "party":"Republican",
                     "image":"../img/young.jpg",
                     "position": "U.S. Representative",
+                    "background":"lawyer",
                     "bio": "Todd Young played soccer at the Naval Academy. He has an M.B.A. from the University of Chicago and a J.D. from Indiana University. He served in the Navy, and worked as a management consultant and lawyer, before winning election to Congress in 2010.",
                     "platform":"Young opposes the individual mandate for health insurance, climate change legislation that raises taxes, and duties on fabric."
                 },
@@ -2431,6 +2465,7 @@
                     "party":"Republican",
                     "image":"../img/portman.png",
                     "position": "Incumbent",
+                    "background":"lawyer",
                     "bio": "Rob Portman graduated from Dartmouth College and the University of Michigan Law School. He worked as a lobbyist and lawyer before entering politics.",
                     "platform":"Portman opposed the Affordable Care Act and a bill to raise the federal minimun wage. He formerly opposed same-sex marriage, but changed his stance in 2011, when his son came out as gay."
                 },
@@ -2489,6 +2524,7 @@
                     "party":"Republican",
                     "image":"../img/toomey.png",
                     "position": "Incumbent",
+                    "background":"businessman",
                     "bio": "Pat Toomey has a B.A. in government from Harvard University. He worked as an investment banker and restaurant owner before entering politics.",
                     "platform":"Toomey opposes regulation of the financial industry. He wants to cut taxes and repeal the Affordable Care Act."
                 },
@@ -2547,6 +2583,7 @@
                     "party":"Republican",
                     "image":"../img/lankford.png",
                     "position": "Incumbent",
+                    "background":"miscellaneous",
                     "bio": "James Lankford has a B.S. in education from the University of Texas and master's in divinity from Southwestern Baptist Theological Seminary. He worked for the Baptist General Convention of Oklahoma for many years before entering politics.",
                     "platform":"Lankford advocates lower taxes and reduced spending. He supports expanded oil drilling, believes that homosexuality is a choice, and argues that federally funded healthcare is unconstitutional. "
                 }
@@ -2568,6 +2605,7 @@
                     "party":"Republican",
                     "image":"../img/johnson.png",
                     "position": "Incumbent",
+                    "background":"businessman",
                     "bio": "Ron Johnson graduated from the University of Minnesota and served as CEO of a plastics manufacturing company for many years before becoming Senator in 2010.",
                     "platform":"Johnson favors lower taxes, reduced spending, and free-market healthcare. He is pro-life, supports gun rights, and denies that climate change is the result of human activity."
                 },
@@ -2577,6 +2615,7 @@
                     "party":"Democrat",
                     "image":"../img/feingold.jpg",
                     "position": "Former U.S. Senator",
+                    "background":"lawyer",
                     "bio": "Feingold was a Rhodes Scholar from the University of Wisconsin. He later earned his law degree from Harvard University. He worked as a private attorney before entering politics.",
                     "platform":"Feingold opposed the Iraq War and was the only Senator to vote against the PATRIOT Act in 2001. He advocates universal healthcare, reproductive rights, and same-sex marriage."
                 }

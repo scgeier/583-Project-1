@@ -11,11 +11,12 @@ html {
     margin:2px;
     color:white;
     background:gray;
+    border-radius:10px;
 }
 
 #floor{
     background:#cccccc;
-    padding:2%;
+    padding-top:10%;
 }
 
 .overlay{
