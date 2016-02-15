@@ -101,6 +101,7 @@
             "party": "Democrat",
             "contested": true,
             "color": "blue",
+            "education": "University of Nevada Reno",
             "incumbent":
                  {"first": "Harry", "last": "Reid", "image": "../img/reid.png"},
             "candidates":[
@@ -218,6 +219,7 @@
             "party": "Democrat",
             "contested": true,
             "color": "blue",
+            "education": "St. Michael's College",
             "incumbent":
                  {"first": "Patrick", "last": "Leahy", "image": "../img/leahy.png"},
             "candidates":

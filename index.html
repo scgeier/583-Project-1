@@ -76,15 +76,40 @@
 </nav>
 
 <container ng-controller="SeatsController as seatCtrl">
+    
+    <div class="col-xs-4">
+        <label>Education:</label>        
+        <select class="form-control" ng-model="selectedEduc">
+            <option ng-repeat="seat in seatCtrl.seats" value="{{seat.education}}">{{seat.education}}</option>
+        </select>
+      </div>
+    
+        <div class="col-xs-4">
+        <label>State:</label>        
+        <select class="form-control" ng-model="selectedState">
+            <option ng-repeat="seat in seatCtrl.seats" value="{{seat.state}}">{{seat.state}}</option>
+        </select>
+      </div>
+        
+            <div class="col-xs-4">
+        <label>Favorite Food:</label>        
+        <select class="form-control" ng-model="food">
+          <option value="Pizza">Pizza</option>
+          <option value="Hamburgers">Hamburgers</option>
+          <option value="French Fries">French Fries</option>
+          <option value="Asia Cafe">Asia Cafe</option>
+        </select>
+      </div>
+    
             <div class="row" id="floor">
              <div class="col-xs-6">
-                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:terms" ng-show="seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'blue'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
+                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedState" ng-show="seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'blue'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
                    <img src="{{seat.incumbent.image}}"/>
                    {{seat.state}}
                 </div>
              </div>
             <div class="col-xs-6">
-                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:terms" ng-show="!seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'red'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
+                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedState" ng-show="!seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'red'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
                     <img src="{{seat.incumbent.image}}"/>
                     {{seat.state}}
                 </div>
@@ -96,6 +121,7 @@
         <i class="fa fa-times fa-2x" ng-click="seatCtrl.closeBox()"></i>
         {{seat.state}}
         {{seat.incumbent.last}}
+        {{seat.candidates}}
      </div>
     </div>
  
