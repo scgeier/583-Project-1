@@ -25,6 +25,7 @@ app.controller('SeatsController', ['$http', function($http) {
    this.setActiveSeat = function(item){
     this.activeSeat = item;
     console.log(this.activeSeat);
+    
     //this.currentId = this.seats[this.currentSeat].id;//
     this.isVisible = true;
     
@@ -37,7 +38,7 @@ app.controller('SeatsController', ['$http', function($http) {
         this.isVisible = false;
     };
 
-    //this is an attempt to write a loop that sorts the seats based on the ones that match the chosen value in a dropdown//
+    //this was an attempt to write a loop that sorts the seats based on the ones that match the chosen value in a dropdown//
     //this.changeState = function(){
         //for(var i = 0; i < this.seats.length; i++){
             //if (this.seats[i].state == "Oklahoma") {
@@ -47,6 +48,7 @@ app.controller('SeatsController', ['$http', function($http) {
         //}
     //};
     
+    //NEED TO WRITE A FUNCTION TO DISPLAY A MESSAGE INSTEAD OF A BIO WHEN INCUMBENT IS NOT RUNNING//
 
     
 }]);

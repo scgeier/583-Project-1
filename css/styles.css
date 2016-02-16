@@ -14,14 +14,18 @@ html {
     border-radius:10px;
 }
 
-#floor{
-    background:#cccccc;
-    padding-top:10%;
+.floor{
+    background-color:#d9d9d9;
+}
+
+#issues{
+    float:top;
 }
 
 .overlay{
     opacity:0.3;
 }
+
 
 img {
     width:60px;
@@ -44,12 +48,27 @@ nav {
     top:20%;
     left:20%;
     width:40%;
-    height:40%;
-    padding:5%;
-    background:#f2f2f2;
+    height:400px;
+    background:white;
     border-radius:5px;
+    overflow-y:scroll;
+}
+
+.hidden-pic{
+    float:left;
+    width:100px;
+    height:100px;
+    margin:7px 7px 0px 0px;
 }
 
 i {
     float:right;
+}
+
+#box-closer {
+    float:right;
+}
+
+#other-candidates{
+    margin-left:15px;
 }

@@ -52,12 +52,7 @@
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search" ng-model="terms">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Link</a></li>
         <li class="dropdown">
@@ -77,57 +72,135 @@
 
 <container ng-controller="SeatsController as seatCtrl">
     
-    <div class="col-xs-4">
-        <label>Education:</label>        
+    <div class="row floor">
+     <div class="col-xs-12">
+        <p>Thirty-four U.S. Senate seats are up for election in 2016. Click on the open seats to learn more about the candidates, or sort them using the categories below.</p>
+     </div>
+    </div>
+    
+        <div class="col-xs-4">
+        <label>Education</label>        
         <select class="form-control" ng-model="selectedEduc">
-            <option ng-repeat="seat in seatCtrl.seats" value="{{seat.education}}">{{seat.education}}</option>
+            <option value="">--Select an alma mater--</option>
+            <option value="Baylor">Baylor University</option>
+              <option value="Biola">Biola University</option>
+            <option value="Birmingham">Birmingham School of Law</option>
+            <option value="Brigham">Brigham Young University</option>
+            <option value="Providence">Brown University</option>
+              <option value="Charleston">Charleston Southern University</option>
+            <option value="Cornell">Cornell University</option>
+             <option value="Dartmouth">Dartmouth College</option>
+            <option value="Davidson">Davidson College</option>
+            <option value="Duke">Duke University</option>
+            <option value="Georgetown">Georgetown University</option>
+            <option value="Harvard">Harvard University</option>
+            <option value="Gonzaga">Gonzaga University</option>
+            <option value="Wake">Howard University</option>
+            <option value="Bloomington">Indiana University</option>
+            <option value="Springfield">Missouri State University</option>
+             <option value="Northwestern">Northwestern University</option>
+            <option value="Penn State">Penn State University</option>
+            <option value="Osteopathic">Philadelphia College of Osteopathic Medicine</option>
+            <option value="Pomona">Pomona College</option>
+            <option value="Princeton">Princeton University</option>
+            <option value="Optometry">Southern College of Optometry</option>
+            <option value="Baptist">Southwest Baptist University</option>
+            <option value="St. Michael">St. Michael's College</option>
+            <option value="Stanford">Stanford University</option>
+             <option value="Tuscaloosa">University of Alabama</option>
+              <option value="Fayetteville">University of Arkansas</option>
+            <option value="Hastings">University of California Hastings</option>
+             <option value="Chicago">University of Chicago</option>
+             <option value="Athens">University of Georgia</option>
+            <option value="Iowa">University of Iowa</option>
+           <option value="Lawrence">University of Kansas</option>
+            <option value="Arbor">University of Michigan</option>
+            <option value="Minneapolis">University of Minnesota</option>
+             <option value="Oxford">University of Mississippi</option>
+            <option value="Reno">University of Nevada at Reno</option>
+            <option value="Durham">University of New Hampshire</option>
+            <option value="Cedar">University of Northern Iowa</option>
+            <option value="Eugene">University of Oregon</option>
+            <option value="Vermillion">University of South Dakota</option>
+            <option value="Austin">University of Texas</option>
+            <option value="Madison">University of Wisconsin</option>
+            <option value="Naval">U.S. Naval Academy</option>
+            <option value="Villanova">Villanova University</option>
+            <option value="Wake">Wake Forest University</option>
+            <option value="Pullman">Washington State University</option>
+            <option value="Wesleyan">Wesleyan University</option>
+            <option value="Willamette">Willamette University</option>
+            <option value="Lewisburg">West Virginia School of Osteopathic Medicine</option>
+             <option value="Yale">Yale University</option>
         </select>
       </div>
     
         <div class="col-xs-4">
         <label>Professional Background</label>        
         <select class="form-control" ng-model="selectedJob">
+            <option value="">--Select a profession--</option> 
             <option value="lawyer">Lawyers</option>
             <option value="doctor">Doctors</option>
-            <option value="businessman">Businesspersons</option>
+            <option value="businessman">Businessmen</option>
             <option value="lifer">Career Politicians</option>
             <option value="miscellaneous">Other</option>
         </select>
       </div>
         
-            <div class="col-xs-4">
-        <label>Favorite Food:</label>        
-        <select class="form-control" ng-model="food">
-          <option value="Pizza">Pizza</option>
-          <option value="Hamburgers">Hamburgers</option>
-          <option value="French Fries">French Fries</option>
-          <option value="Asia Cafe">Asia Cafe</option>
-        </select>
-      </div>
+        <div class="col-xs-4">
+        <label id="issues">Issues</label> 
+          <input type="text" class="form-control" placeholder="Search for a topic" ng-model="terms">
+        </div>
+
     
-            <div class="row" id="floor">
+            <div class="row floor">
              <div class="col-xs-6">
-                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedJob" ng-show="seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'blue'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
+                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedJob | filter:terms" ng-show="seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'blue'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
                    <img src="{{seat.incumbent.image}}"/>
                    {{seat.state}}
                 </div>
              </div>
             <div class="col-xs-6">
-                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedJob" ng-show="!seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'red'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
+                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedJob | filter:terms" ng-show="!seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'red'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
                     <img src="{{seat.incumbent.image}}"/>
                     {{seat.state}}
                 </div>
              </div>
             </div>
     
-  <div class="row" id="hidden-seat" ng-class="{hidden:!seatCtrl.isVisible}">
-     <div class="col-xs-12" ng-repeat="seat in seatCtrl.seats | filter:seatCtrl.activeSeat">
-        <i class="fa fa-times fa-2x" ng-click="seatCtrl.closeBox()"></i>
-        {{seat.state}}
-        {{seat.incumbent.last}}
-        {{seat.candidates}}
-     </div>
+  <div class="row" id="hidden-seat" ng-repeat="seat in seatCtrl.seats | filter:seatCtrl.activeSeat" ng-class="{hidden:!seatCtrl.isVisible}">
+        <div class="col-xs-12">
+        <i class="fa fa-times fa-2x" id="box-closer" ng-click="seatCtrl.closeBox()"></i>
+         <img class="hidden-pic" src="{{seat.incumbent.image}}"/>
+        <h5>Incumbent: {{seat.incumbent.first}} {{seat.incumbent.last}}</h5>
+            <p class="incumbent-text">{{seat.incumbent.bio}}
+            {{seat.incumbent.platform}}</p>
+        </div>
+    <div class="row">
+        <div class="col-xs-12" id="other-candidates"><h5>Other Candidates</h5></div>
     </div>
+        <div class="col-xs-12">
+          <table class="table">
+            <thead id="head">
+             <tr>
+                <th>Name</th>
+                <th>Party</th>
+                <th>Current Position</th>
+                <th>Platform</th>
+             </tr>
+            </thead>
+            <tbody ng-repeat="candidate in seat.candidates">
+                <tr>
+                    <td>{{candidate.first}} {{candidate.last}}</td>
+                    <td>{{candidate.party}}</td>
+                    <td>{{candidate.position}}</td>
+                    <td>{{candidate.platform}}</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+     </div>
+
  
 </container>
 
