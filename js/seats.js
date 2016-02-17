@@ -6,7 +6,7 @@ app.controller('SeatsController', ['$http', function($http) {
     this.seats = [];
     var _this = this;
 
-    $http.get('/js/seats.json')
+    $http.get('js/seats.json')
         .success(function(data) {
             console.log(data);
             console.log(this);
