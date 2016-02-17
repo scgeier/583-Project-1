@@ -23,62 +23,44 @@
 
     <body ng-app="myApp" ng-controller="BaseController as base">
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">2016 U.S. Senate Elections</a>
+  <div class="container-fluid" id="navbar">
+    <div class="col-xs-11">
+     <a class="navbar-brand" href="#"><img id="seal" alt="Seal" src="img/seal.png"/></a>
+      <h2>2016 <span id="desktop-title">U.S. Senate</span> Elections</h2>
     </div>
+    <div class="col-xs-1">
+      <i class="fa fa-info fa-lg" id="info-icon"></i>
+  </div>
+  </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+
+    <!--the About section popup-->
+    <div id="about">
+      <div class="row">
+        <div class="col-xs-2 offset-left"></div>
+       <div class="col-xs-8 info-title-box">
+      <h2 class="info-titles">About this Project</h2>
+       </div>
+       <div class="col-xs-2 info-closer">
+        <i class="fa fa-times fa-2x box-closer"></i>
+       </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12" id="about-text">
+          <p>This web app was created as a project for an Advanced Interactive Multimedia class at the University of North Carolina at Chapel Hill. It uses Angular.js to dynamically build front-end material with JSON data. Please note that the site is intended only to be a prototype. The Senate seats have not yet been fully populated with information on every candidate.</p>
+        </div>
+    </div>
+    </div>
 
 <container ng-controller="SeatsController as seatCtrl">
     
     <div class="row floor">
      <div class="col-xs-12">
-        <p>Thirty-four U.S. Senate seats are up for election in 2016. Click on the open seats to learn more about the candidates, or sort them using the categories below.</p>
+        <p id="intro-text">Thirty-four U.S. Senate seats are up for election in 2016.<br/>Click on the open seats to learn more about the candidates, or sort them using the categories below.</p>
      </div>
     </div>
     
-        <div class="col-xs-4">
+    <div class="col-xs-12 col-md-4 sorters" id="education">
         <label>Education</label>        
         <select class="form-control" ng-model="selectedEduc">
             <option value="">--Select an alma mater--</option>
@@ -135,8 +117,8 @@
         </select>
       </div>
     
-        <div class="col-xs-4">
-        <label>Professional Background</label>        
+    <div class="col-xs-12 col-md-4 sorters">
+        <label>Background</label>        
         <select class="form-control" ng-model="selectedJob">
             <option value="">--Select a profession--</option> 
             <option value="lawyer">Lawyers</option>
@@ -147,21 +129,21 @@
         </select>
       </div>
         
-        <div class="col-xs-4">
+        <div class="col-xs-12 col-md-4 sorters">
         <label id="issues">Issues</label> 
           <input type="text" class="form-control" placeholder="Search for a topic" ng-model="terms">
         </div>
 
     
             <div class="row floor">
-             <div class="col-xs-6">
-                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedJob | filter:terms" ng-show="seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'blue'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
+             <div class="col-xs-6 outline">
+                <div class="box" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedJob | filter:terms" ng-show="seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'blue'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
                    <img src="{{seat.incumbent.image}}"/>
                    {{seat.state}}
                 </div>
              </div>
-            <div class="col-xs-6">
-                <div class="box" id="clickable" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedJob | filter:terms" ng-show="!seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'red'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
+            <div class="col-xs-6 outline">
+                <div class="box" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedJob | filter:terms" ng-show="!seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'red'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
                     <img src="{{seat.incumbent.image}}"/>
                     {{seat.state}}
                 </div>
@@ -203,6 +185,15 @@
 
  
 </container>
+
+<footer id=#footer-nav">
+    <ul>
+        <li>Sources:</li>
+        <li><a href="http://www.senate.gov/artandhistory/art/special/Desks/chambermap.cfm?id=11402" target="_blank">www.senate.gov</a></li>
+        <li><a href="https://www.opencongress.org/people/senators#M" target="_blank">www.opencongress.org</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/United_States_Senate_elections,_2016#Connecticut" target="_blank">wikipedia article: U.S. Senate Elections, 2016</a></li>
+    </ul>
+</footer>
 
 
 
