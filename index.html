@@ -29,8 +29,8 @@
 
   <div class="container-fluid" id="navbar">
     <div class="col-xs-10">
-     <a class="navbar-brand" href="#"><img id="seal" alt="Seal" src="img/seal.png"/></a>
-      <h2>2016 <span id="desktop-title">U.S. Senate Elections</span></h2>
+     <a class="navbar-brand" href="http://www.senate.gov" target="_blank"><img id="seal" alt="Seal" src="img/seal.png"/></a>
+      <h1>2016 <span id="desktop-title">U.S. Senate Elections</span></h1>
     </div>
     <div class="col-xs-2">
       <i class="fa fa-info fa-lg" id="info-icon"></i>
@@ -40,9 +40,9 @@
 
 <!--the About section popup-->
   <div class="row">
-    <div class="col-xs-8 col-xs-offset-2" id="about">
-        <i class="fa fa-times fa-2x" id="box-closer"></i>
-        <h4 id="about-header">About This Project</h4>
+    <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3" id="about">
+        <i class="fa fa-times fa-2x" id="about-closer"></i>
+        <h2 id="about-header">About This Project</h2>
         <p id="about-text">This web app was created as a project for an Advanced Interactive Multimedia class at the University of North Carolina at Chapel Hill. It uses Angular.js to dynamically build front-end material with JSON data. Please note that the site is intended only to be a prototype. The Senate seats have not yet been fully populated with information on every candidate.</p>
      </div>
   </div>
@@ -57,7 +57,7 @@
     </div>
     
     <div class="col-xs-12 col-md-4 sorters" id="education">
-        <label>Education</label>        
+        <label class="sorter-title">Education</label>        
         <select class="form-control" ng-model="selectedEduc">
             <option value="">--Select an alma mater--</option>
             <option value="Baylor">Baylor University</option>
@@ -114,7 +114,7 @@
       </div>
     
     <div class="col-xs-12 col-md-4 sorters">
-        <label>Background</label>        
+        <label class="sorter-title">Background</label>        
         <select class="form-control" ng-model="selectedJob">
             <option value="">--Select a profession--</option> 
             <option value="lawyer">Lawyers</option>
@@ -127,7 +127,7 @@
       </div>
         
         <div class="col-xs-12 col-md-4 sorters">
-        <label id="issues">Issues</label> 
+        <label class="sorter-title" id="issues">Issues</label> 
           <input type="text" class="form-control" placeholder="Search for a topic" ng-model="terms">
         </div>
 
@@ -135,36 +135,34 @@
             <div class="row floor">
              <div class="col-xs-6 outline">
                 <div class="box" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedJob | filter:terms" ng-show="seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'blue'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
-                   <img src="{{seat.incumbent.image}}"/>
+                   <img class="visible-pic" src="{{seat.incumbent.image}}"/>
                    {{seat.state}}
                 </div>
              </div>
             <div class="col-xs-6 outline">
                 <div class="box" ng-repeat="seat in seatCtrl.seats | filter:selectedEduc | filter:selectedJob | filter:terms" ng-show="!seat.side" ng-class="{overlay:!seat.contested}" ng-style="{'background-color':'red'}" ng-click="seatCtrl.setActiveSeat(seat.id)">
-                    <img src="{{seat.incumbent.image}}"/>
+                    <img class="visible-pic" src="{{seat.incumbent.image}}"/>
                     {{seat.state}}
                 </div>
              </div>
             </div>
     
   <div class="row" ng-repeat="seat in seatCtrl.seats | filter:seatCtrl.activeSeat" ng-class="{hidden:!seatCtrl.isVisible}">
-    <div class="col-xs-8 col-xs-offset-2" id="hidden-seat">
+    <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3" id="hidden-seat">
         <i class="fa fa-times fa-2x" id="box-closer" ng-click="seatCtrl.closeBox()"></i>
          <img class="hidden-pic" src="{{seat.incumbent.image}}"/>
-        <h5>Incumbent: {{seat.incumbent.first}} {{seat.incumbent.last}}</h5>
-            <p class="incumbent-text">{{seat.incumbent.bio}}
+        <h5 id="incumbent-header">Incumbent: {{seat.incumbent.first}} {{seat.incumbent.last}}</h5>
+            <p id="incumbent-text">{{seat.incumbent.bio}}
             {{seat.incumbent.platform}}</p>
-    <div class="row">
-        <div class="col-xs-12" id="other-candidates"><h5>Other Candidates</h5></div>
-    </div>
-        <div class="col-xs-12" id="candidate-table">
+    <div class="row" ng-hide="seat.candidates == false">
+        <div class="col-xs-12" id="other-candidates"><h4>Other Candidates<img class="rotate-phone" src="img/rotate.png"/></h4></div>
           <table class="table">
             <thead id="head">
              <tr>
                 <th>Name</th>
                 <th>Party</th>
                 <th>Current Position</th>
-                <th>Platform</th>
+                <th class="rotate">Platform</th>
              </tr>
             </thead>
             <tbody ng-repeat="candidate in seat.candidates">
@@ -172,10 +170,11 @@
                     <td>{{candidate.first}} {{candidate.last}}</td>
                     <td>{{candidate.party}}</td>
                     <td>{{candidate.position}}</td>
-                    <td>{{candidate.platform}}</td>
+                    <td class="rotate">{{candidate.platform}}</td>
                 </tr>
             </tbody>
           </table>
+         </div>
         </div>
      </div>
   </div>
@@ -185,15 +184,17 @@
 
 <footer>
 <div class="row">
-    <div class="col-xs-12">
-     <ul id=#footer-nav">
-     <li>Sources</li>
-      <li><a href="http://www.senate.gov/artandhistory/art/special/Desks/chambermap.cfm?id=11402" target="_blank">www.senate.gov</a></li>
-      <li><a href="https://www.opencongress.org/people/senators#M" target="_blank">www.opencongress.org</a></li>
-      <li><a href="https://en.wikipedia.org/wiki/United_States_Senate_elections,_2016#Connecticut" target="_blank">wikipedia.com</a></li>
+    <div class="col-xs-12 col-md-2">
+     <p id="sources">Sources:</p>
     </div>
+    <div class="col-xs-12 col-md-10">
+     <ul>
+      <li class="footer-nav"><a href="http://www.senate.gov/artandhistory/art/special/Desks/chambermap.cfm?id=11402" target="_blank">www.senate.gov</a></li>
+      <li class="footer-nav"><a href="https://www.opencongress.org/people/senators#M" target="_blank">www.opencongress.org</a></li>
+      <li class="footer-nav"><a href="https://en.wikipedia.org/wiki/United_States_Senate_elections,_2016#Connecticut" target="_blank">wikipedia.com</a></li>
+    </ul>
     </div>
-     </ul>
+</div>
 </footer>
 
 

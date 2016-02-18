@@ -30,7 +30,7 @@
                     },
         "candidates":[
                 {
-                    "first": "No other candidates have officially declared.",
+                    "first": "No other candidates have\n officially declared in this race.",
                     "last": "",
                     "party":"",
                     "image":"",
@@ -246,7 +246,7 @@
                 },
             "candidates":[
                 {
-                    "first": "No other candidates have officially declared in this race.",
+                    "first": "No other candidates have\n officially declared in this race.",
                     "last": "",
                     "party":"",
                     "image":"",
@@ -1127,7 +1127,7 @@
                     },
             "candidates": [
                 {
-                    "first": "No other candidates have officially declared in this race.",
+                    "first": "No other candidates have\n officially declared in this race.",
                     "last": "",
                     "party":"",
                     "image":"",
@@ -1831,7 +1831,7 @@
                     },
             "candidates": [
                 {
-                    "first": "No other candidates have officially declared in this race.",
+                    "first": "No other candidates have\n officially declared in this race.",
                     "last": "",
                     "party":"",
                     "image":"",
@@ -2154,7 +2154,7 @@
                     },
             "candidates": [
                 {
-                    "first": "No other candidates have officially declared in this race.",
+                    "first": "No other candidates have\n officially declared in this race.",
                     "last": "",
                     "party":"",
                     "image":"",
@@ -2327,7 +2327,7 @@
                     },
             "candidates": [
                 {
-                    "first": "No other candidates have officially declared in this race.",
+                    "first": "No other candidates have\n officially declared in this race.",
                     "last": "",
                     "party":"",
                     "image":"",
@@ -2582,7 +2582,7 @@
                     },
             "candidates": [
                 {
-                    "first": "No other candidates have officially declared in this race.",
+                    "first": "No other candidates have\n officially declared in this race.",
                     "last": "",
                     "party":"",
                     "image":"",
