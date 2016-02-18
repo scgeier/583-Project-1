@@ -32,6 +32,13 @@ padding-bottom:6%;
     }
 }
 
+@media screen and (min-width: 0px) and (max-width: 414px) {
+    #intro-text {
+      font-size:1.7em;
+      line-height:90%;
+    }
+}
+
 .floor {
     padding-left:5%;
     padding-right:5%;
@@ -94,35 +101,36 @@ img {
 }
 
 
-#hidden-seat{
+#about, #hidden-seat{
+    border:1px solid #d9d9d9;
+    box-shadow: 3px 3px 3px #888888;
     z-index:1000;
     position:absolute;
-    top:20%;
-    left:30%;
-    width:50%;
-    height:300px;
+    top:10%;
+    height:560px;
     background:white;
     border-radius:5px;
     overflow-y:scroll;
+    padding:3%;
 }
 
-@media screen and (min-width: 0px) and (max-width: 414px) {
+/*@media screen and (min-width: 0px) and (max-width: 414px) {
     #hidden-seat {
-    left:10%;
+     left:10%;
      width:80%;
     }
-}
+}*/
 
-@media screen and (min-width: 0px) and (max-width: 414px) {
+/*@media screen and (min-width: 0px) and (max-width: 414px) {
     #candidate-table {
       zoom:0.8;
     }
-}
+}*/
 
 .hidden-pic{
     float:left;
-    width:100px;
-    height:100px;
+    width:108px;
+    height:130px;
     margin:7px 7px 0px 0px;
 }
 
@@ -134,21 +142,15 @@ i {
     float:right;
 }
 
-#other-candidates{
-    margin-left:15px;
-}
+/*#other-candidates{
+    margin-top:20px;
+}*/
 
 #about {
         display:none;
-        width:50%;
-        height:40%;
-        background:#2d5986;
-        color:white;
         font-family: Arial;
         position:absolute;
         z-index: 1002;
-        margin-left:10%;
-        margin-top:10%;
 }
 
 .info-title-box {
@@ -156,11 +158,16 @@ i {
      text-align:center;
 }
 
+#about-header {
+    border-bottom:1px solid #d9d9d9;
+    text-align:center;
+    padding-bottom:10px;
+}
 
 #about-text {
-        color:white;
         font-family:Helvetica Thin, sans-serif;
         font-weight:300;
+        font-size:1.2em;
         padding:5%;
 }
 
@@ -170,9 +177,19 @@ footer ul {
 
 footer ul li {
   float:left;
-  padding:10px;
+  padding:1px;
+  margin:0;
+}
+
+footer li+li {
+    border-left:1px solid #d9d9d9;
 }
 
 footer ul li a {
   display:inline-block;
+}
+@media screen and (min-width: 0px) and (max-width: 414px) {
+    #footer-nav {
+      zoom:0.5;
+    }
 }

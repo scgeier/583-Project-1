@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2016 U.S. Senate Election App</title>
         <!--JQuery-->
         <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
@@ -24,33 +28,25 @@
     <body ng-app="myApp" ng-controller="BaseController as base">
 
   <div class="container-fluid" id="navbar">
-    <div class="col-xs-11">
+    <div class="col-xs-10">
      <a class="navbar-brand" href="#"><img id="seal" alt="Seal" src="img/seal.png"/></a>
-      <h2>2016 <span id="desktop-title">U.S. Senate</span> Elections</h2>
+      <h2>2016 <span id="desktop-title">U.S. Senate Elections</span></h2>
     </div>
-    <div class="col-xs-1">
+    <div class="col-xs-2">
       <i class="fa fa-info fa-lg" id="info-icon"></i>
   </div>
   </div>
 
 
-    <!--the About section popup-->
-    <div id="about">
-      <div class="row">
-        <div class="col-xs-2 offset-left"></div>
-       <div class="col-xs-8 info-title-box">
-      <h2 class="info-titles">About this Project</h2>
-       </div>
-       <div class="col-xs-2 info-closer">
-        <i class="fa fa-times fa-2x box-closer"></i>
-       </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12" id="about-text">
-          <p>This web app was created as a project for an Advanced Interactive Multimedia class at the University of North Carolina at Chapel Hill. It uses Angular.js to dynamically build front-end material with JSON data. Please note that the site is intended only to be a prototype. The Senate seats have not yet been fully populated with information on every candidate.</p>
-        </div>
-    </div>
-    </div>
+<!--the About section popup-->
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2" id="about">
+        <i class="fa fa-times fa-2x" id="box-closer"></i>
+        <h4 id="about-header">About This Project</h4>
+        <p id="about-text">This web app was created as a project for an Advanced Interactive Multimedia class at the University of North Carolina at Chapel Hill. It uses Angular.js to dynamically build front-end material with JSON data. Please note that the site is intended only to be a prototype. The Senate seats have not yet been fully populated with information on every candidate.</p>
+     </div>
+  </div>
+
 
 <container ng-controller="SeatsController as seatCtrl">
     
@@ -124,6 +120,7 @@
             <option value="lawyer">Lawyers</option>
             <option value="doctor">Doctors</option>
             <option value="businessman">Businessmen</option>
+            <option value="teach">Teachers</option>
             <option value="lifer">Career Politicians</option>
             <option value="miscellaneous">Other</option>
         </select>
@@ -150,14 +147,13 @@
              </div>
             </div>
     
-  <div class="row" id="hidden-seat" ng-repeat="seat in seatCtrl.seats | filter:seatCtrl.activeSeat" ng-class="{hidden:!seatCtrl.isVisible}">
-        <div class="col-xs-12">
+  <div class="row" ng-repeat="seat in seatCtrl.seats | filter:seatCtrl.activeSeat" ng-class="{hidden:!seatCtrl.isVisible}">
+    <div class="col-xs-8 col-xs-offset-2" id="hidden-seat">
         <i class="fa fa-times fa-2x" id="box-closer" ng-click="seatCtrl.closeBox()"></i>
          <img class="hidden-pic" src="{{seat.incumbent.image}}"/>
         <h5>Incumbent: {{seat.incumbent.first}} {{seat.incumbent.last}}</h5>
             <p class="incumbent-text">{{seat.incumbent.bio}}
             {{seat.incumbent.platform}}</p>
-        </div>
     <div class="row">
         <div class="col-xs-12" id="other-candidates"><h5>Other Candidates</h5></div>
     </div>
@@ -182,17 +178,22 @@
           </table>
         </div>
      </div>
+  </div>
 
  
 </container>
 
-<footer id=#footer-nav">
-    <ul>
-        <li>Sources:</li>
-        <li><a href="http://www.senate.gov/artandhistory/art/special/Desks/chambermap.cfm?id=11402" target="_blank">www.senate.gov</a></li>
-        <li><a href="https://www.opencongress.org/people/senators#M" target="_blank">www.opencongress.org</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/United_States_Senate_elections,_2016#Connecticut" target="_blank">wikipedia article: U.S. Senate Elections, 2016</a></li>
-    </ul>
+<footer>
+<div class="row">
+    <div class="col-xs-12">
+     <ul id=#footer-nav">
+     <li>Sources</li>
+      <li><a href="http://www.senate.gov/artandhistory/art/special/Desks/chambermap.cfm?id=11402" target="_blank">www.senate.gov</a></li>
+      <li><a href="https://www.opencongress.org/people/senators#M" target="_blank">www.opencongress.org</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/United_States_Senate_elections,_2016#Connecticut" target="_blank">wikipedia.com</a></li>
+    </div>
+    </div>
+     </ul>
 </footer>
 
 

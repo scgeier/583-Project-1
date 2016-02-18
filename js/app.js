@@ -6,7 +6,7 @@ angular.element(document).ready(function () {
          $('#about').fadeToggle( "fast", "linear" );
             });
     
-     $('.box-closer').click(function(){
+     $('#box-closer').click(function(){
         $('#about').hide();
         });
 });
