@@ -1,5 +1,6 @@
 html {
     position:relative;
+    overflow:auto;
 }
 
 body {
@@ -126,12 +127,36 @@ padding-bottom:6%;
     background:white;
     border-radius:5px;
     overflow-y:scroll;
+    overflow-x:hidden;
     padding:3%;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.2);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
 }
 
 @media screen and (min-width: 415px) and (max-width: 2000px) {
     #incumbent-header {
       font-size:1.5em;
+    }
+}
+
+@media screen and (min-width: 567px) and (max-width: 767px) {
+    #hidden-seat {
+      top:5%;
+      height:310px;
     }
 }
 
