@@ -156,7 +156,7 @@
             {{seat.incumbent.platform}}</p>
     <div class="row" ng-hide="seat.candidates == false">
         <div class="col-xs-12" id="other-candidates"><h4>Other Candidates<img class="rotate-phone" src="img/rotate.png"/></h4></div>
-          <table class="table">
+          <table class="table rotate"">
             <thead id="head">
              <tr>
                 <th>Name</th>
@@ -170,7 +170,7 @@
                     <td>{{candidate.first}} {{candidate.last}}</td>
                     <td>{{candidate.party}}</td>
                     <td>{{candidate.position}}</td>
-                    <td class="rotate">{{candidate.platform}}</td>
+                    <td>{{candidate.platform}}</td>
                 </tr>
             </tbody>
           </table>
