@@ -1,0 +1,3 @@
+2016 U.S. Senate Elections App
+
+I built this app in February 2016 for the Advanced Interactive Multimedia class at the University of North Carolina. The app shows the U.S. Senate seats that were up for election later that year. I gathered information about each of the candidates from a variety of online databases, and stored the data in a JSON file. I used AngularJS for the front-end framework. Visitors can click on each open seat to view biographies of the candidates and their stances on key issues. Users can also sort the open seats by the candidates' educational background, professional experience and political beliefs.
